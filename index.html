@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React para Iniciantes</title>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        const Button = () => {
+            return <button>Comprar</button>;
+        }
+
+        const MainNav = () => {
+            return <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+                <Button />
+            </nav>;
+        }
+
+        const Produtos = () => {
+            const produtos = ['Produto 1', 'Produto 2', 'Produto 3'];
+
+            function handleClick(event) {
+                console.log('comprou o produto: ' + event.target.innerText);
+            }
+
+            return <div>
+                <h2>Produtos</h2>
+                <ul>
+                    <li onClick={handleClick}>{produtos[0]} - R$ {Math.random() * 100}</li>
+                    <li onClick={handleClick}>{produtos[1]} - R$ {Math.random() * 100}</li>
+                    <li onClick={handleClick}>{produtos[2]} - R$ {Math.random() * 100}</li>
+                </ul>
+            </div>;
+        }
+
+        const Compras = () => {
+            const [count, setCount] = React.useState(0);
+
+            function handleClick() {
+                setCount(count + 1);
+            }
+
+            return <div>
+                <button onClick={handleClick}>Comprar</button>
+                <p>Total: {count}</p>
+                <p>Preço: {count * 100.01}</p>
+            </div>
+        }
+
+        const App = () => {
+            return <div>
+                <h1>Olá, React!</h1>
+                <Compras />
+            </div>;
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
