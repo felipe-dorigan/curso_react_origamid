@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Para Iniciantes</title>
+    
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="app-javascript">
+        <p>Total: <span id="total"></span></p>
+        <p>Preço: R$ <span id="preco"></span></p>
+        <button id="button">Comprar</button>
+    </div>
+    <script type="application/javascript">
+        const total = document.getElementById('total');
+        const preco = document.getElementById('preco');
+        const button = document.getElementById('button');
+
+        let contador = 0;
+
+        function atualizarValores(contador) {
+            total.innerText = contador;
+            preco.innerText = (contador * 250).toFixed(2);
+        }
+
+        atualizarValores(contador);
+
+        function handleClick() {
+            contador++;
+            atualizarValores(contador);
+        }
+
+        button.addEventListener('click', handleClick);
+    </script>
+
+    <br><hr><br>
+
+    <div id="app-react">
+
+    </div>
+
+    <script type="text/babel">
+        const Comprar = () => {
+            const [contador, setContador] = React.useState(0);
+
+            return <div>
+                    <p>Total: {contador}</p>
+                    <p>Preço: R$ {(contador * 250).toFixed(2)}</p>
+                    <button onClick={() => setContador(contador + 1)}>Comprar</button>
+                </div>
+        }
+
+        ReactDOM.createRoot(document.getElementById('app-react')).render(<Comprar />);
+    </script>
+</body>
+</html>

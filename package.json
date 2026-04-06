@@ -1,0 +1,24 @@
+{
+  "name": "curso_react_origamid",
+  "version": "1.0.0",
+  "description": "Este repositório reúne meus estudos do curso de React, organizados por módulos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipe-dorigan/curso_react_origamid.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/felipe-dorigan/curso_react_origamid/issues"
+  },
+  "dependencies": {
+    "esbuild": "^0.28.0"
+  },
+  "homepage": "https://github.com/felipe-dorigan/curso_react_origamid#readme"
+}

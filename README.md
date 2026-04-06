@@ -45,6 +45,14 @@ Introdução ao funcionamento do React de forma prática, sem ferramentas de bui
 - Atualização de estado com `setCount` e re-renderização reativa
 - Componente `App` como raiz da aplicação
 
+**Novos estudos (ferramentas de automação):**
+
+- Inicialização de projeto com npm (`npm init -y`)
+- Instalação e uso do `esbuild` para empacotamento
+- Criação de scripts no `package.json` para desenvolvimento e build
+- Script `start` com `--watch` e `--servedir` para fluxo local
+- Script `build` para gerar bundle final em `dist/main.js`
+
 ---
 
 ## Próximos passos
