@@ -53,6 +53,24 @@ Introdução ao funcionamento do React de forma prática, sem ferramentas de bui
 - Script `start` com `--watch` e `--servedir` para fluxo local
 - Script `build` para gerar bundle final em `dist/main.js`
 
+**Novos estudos (ferramentas front-end com Vite):**
+
+- Inicialização de projeto React com Vite
+- Estrutura padrão do projeto (`src`, `public`, `index.html`)
+- Ponto de entrada com `createRoot` em `main.jsx`
+- Componente `App` como módulo principal da interface
+- Configuração e uso de scripts do Vite no `package.json`:
+  - `npm run dev` para ambiente de desenvolvimento
+  - `npm run build` para build de produção
+  - `npm run preview` para pré-visualizar build localmente
+- Introdução ao ESLint no projeto:
+  - Arquivo de configuração dedicado
+  - Regras para React e React Hooks
+  - Ajustes iniciais de regras para o contexto de estudo
+- Prática de renderização condicional com JSX
+- Prática com arrays e `reduce` para cálculo de total de compras
+- Exibição dinâmica de dados de objeto no componente
+
 ---
 
 ## Próximos passos
