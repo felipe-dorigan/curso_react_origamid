@@ -4,8 +4,8 @@
   "description": "Este repositório reúne meus estudos do curso de React, organizados por módulos.",
   "main": "index.js",
   "scripts": {
-    "start": "esbuild --bundle src/index.js --outfile=dist/main.js --servedir=./ --watch",
-    "build": "esbuild --bundle src/index.js --outfile=dist/main.js"
+    "start": "esbuild --bundle src/index.jsx --outfile=dist/main.js --servedir=./ --watch",
+    "build": "esbuild --bundle src/index.jsx --outfile=dist/main.js"
   },
   "repository": {
     "type": "git",
