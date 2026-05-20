@@ -2,9 +2,11 @@
   "name": "curso_react_origamid",
   "version": "1.0.0",
   "description": "Este repositório reúne meus estudos do curso de React, organizados por módulos.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -13,12 +15,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/felipe-dorigan/curso_react_origamid/issues"
   },
   "dependencies": {
-    "esbuild": "^0.28.0"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.1",
+    "vite": "^8.0.4"
   },
   "homepage": "https://github.com/felipe-dorigan/curso_react_origamid#readme"
 }

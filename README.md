@@ -86,6 +86,15 @@ Introdução ao funcionamento do React de forma prática, sem ferramentas de bui
 - Criação de função `handleScroll` com `window.addEventListener`
 - Diferença entre eventos nativos do DOM e eventos React
 
+**Novos estudos (componentes e estrutura centralizada):**
+
+- Criação de uma estrutura React única na raiz do repositório com Vite
+- Configuração do ambiente na raiz com `react`, `react-dom`, `vite` e `@vitejs/plugin-react`
+- Scripts principais no `package.json` da raiz: `dev`, `build` e `preview`
+- Ponto de entrada único com `index.html`, `src/main.jsx` e `src/App.jsx`
+- Importação de componentes diretamente das pastas de estudo (ex: `0210-componentes/src/Form.jsx`)
+- Remoção de estruturas duplicadas de configuração React dentro das subpastas
+
 ---
 
 ## Próximos passos
