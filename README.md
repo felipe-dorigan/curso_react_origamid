@@ -71,6 +71,21 @@ Introdução ao funcionamento do React de forma prática, sem ferramentas de bui
 - Prática com arrays e `reduce` para cálculo de total de compras
 - Exibição dinâmica de dados de objeto no componente
 
+**Novos estudos (JSX com arrays):**
+
+- Renderização de listas com `.map()` dentro do JSX
+- Uso obrigatório da prop `key` em listas renderizadas
+- Encadeamento de `.filter()` e `.map()` para filtrar e exibir dados
+- Iteração sobre arrays aninhados (ex: lista de cores por produto)
+- Aplicação de estilos inline dinâmicos via JSX (`style={{ backgroundColor: cor }}`)
+
+**Novos estudos (eventos no React):**
+
+- Eventos sintéticos do React: `onClick` com arrow function inline
+- Acesso ao objeto `event` nos handlers de evento
+- Criação de função `handleScroll` com `window.addEventListener`
+- Diferença entre eventos nativos do DOM e eventos React
+
 ---
 
 ## Próximos passos

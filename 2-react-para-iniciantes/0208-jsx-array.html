@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const App = () => {
+            const produtos = [
+                {
+                    id: 1,
+                    nome: 'Smartphone',
+                    preco: 'R$ 2000',
+                    cores: ['#29d8d5', '#252a34', '#fc3766'],
+                },
+                {
+                    id: 2,
+                    nome: 'Notebook',
+                    preco: 'R$ 3000',
+                    cores: ['#ffd045', '#d4394b', '#f37c59'],
+                },
+                {
+                    id: 3,
+                    nome: 'Tablet',
+                    preco: 'R$ 1500',
+                    cores: ['#365069', '#47c1c8', '#f95786'],
+                },
+            ];
+
+            return ( 
+                <section>
+                    {produtos
+                        .filter(({ preco }) => Number(preco.replace('R$ ', '')) > 1500)
+                        .map((produto) => (
+                        <div key={produto.id}>
+                            <h1>{produto.nome}</h1>
+                            <p>Preço: {produto.preco}</p>
+                            <ul>
+                                {produto.cores.map((cor, index) => (
+                                    <li key={index} style={{ 
+                                        backgroundColor: cor, 
+                                        margin: '10px', 
+                                        color: '#fff', 
+                                        padding: '5px' 
+                                    }}>
+                                        {cor}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    ) )}
+                </section>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>

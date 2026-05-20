@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const App = () => {
+            const handleScroll = (event) => {
+                console.log('Scroll', event);
+            };
+
+            window.addEventListener('scroll', handleScroll);
+
+            return (
+                <div style={{ height: '200vh', padding: '20px' }}>
+                    <button onClick={(event) => console.log('Clicou', event)}>Clique aqui</button>
+                </div>
+            );
+        }
+
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
