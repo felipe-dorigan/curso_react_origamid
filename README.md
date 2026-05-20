@@ -95,6 +95,20 @@ Introdução ao funcionamento do React de forma prática, sem ferramentas de bui
 - Importação de componentes diretamente das pastas de estudo (ex: `0210-componentes/src/Form.jsx`)
 - Remoção de estruturas duplicadas de configuração React dentro das subpastas
 
+**Comandos para iniciar um ambiente React com Vite:**
+
+- Criar projeto na pasta atual: `npm create vite@latest . -- --template react`
+- Instalar dependências após criar o projeto: `npm install`
+- Iniciar ambiente de desenvolvimento: `npm run dev`
+- Gerar build de produção: `npm run build`
+- Visualizar localmente a build de produção: `npm run preview`
+
+**Convenções de versionamento do ambiente React:**
+
+- `node_modules/` fica no `.gitignore`, pois pode ser recriado com `npm install`
+- `dist/` fica no `.gitignore`, pois contém apenas os arquivos gerados pelo build de produção
+- `package-lock.json` deve ser versionado para manter consistência nas instalações de dependências
+
 ---
 
 ## Próximos passos
