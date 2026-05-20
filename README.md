@@ -86,6 +86,15 @@ Introdução ao funcionamento do React de forma prática, sem ferramentas de bui
 - Criação de função `handleScroll` com `window.addEventListener`
 - Diferença entre eventos nativos do DOM e eventos React
 
+**Novos estudos (0211 - propriedades / props):**
+
+- Passagem de propriedades para componentes reutilizáveis (`label`, `id`, `type`, `placeholder`)
+- Uso de `children` para conteúdo interno de componentes (ex: texto do botão)
+- Uso de rest/spread props em componentes (`...props`) para repasse de atributos
+- Criação de componente de título customizável via props (`cor`, `texto`, `children`)
+- Composição de formulário com componentes desacoplados (`Form`, `Input`, `Button`, `Titulo`)
+- Passagem de arrays e leitura de props para depuração inicial com `console.log`
+
 **Novos estudos (componentes e estrutura centralizada):**
 
 - Criação de uma estrutura React única na raiz do repositório com Vite
@@ -94,6 +103,13 @@ Introdução ao funcionamento do React de forma prática, sem ferramentas de bui
 - Ponto de entrada único com `index.html`, `src/main.jsx` e `src/App.jsx`
 - Importação de componentes diretamente das pastas de estudo (ex: `0210-componentes/src/Form.jsx`)
 - Remoção de estruturas duplicadas de configuração React dentro das subpastas
+
+**Fluxo atual de execução para estudo:**
+
+- Estrutura React/Vite centralizada na raiz do repositório
+- Entrada principal da aplicação em `src/index.jsx`
+- Arquivos de apoio para alternar contexto entre aulas (`src/App-0210.jsx` e `src/App-0211.jsx`)
+- Componente principal (`src/App.jsx`) como ponto de troca manual durante os estudos
 
 **Comandos para iniciar um ambiente React com Vite:**
 
