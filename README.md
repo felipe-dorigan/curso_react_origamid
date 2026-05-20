@@ -95,6 +95,16 @@ Introdução ao funcionamento do React de forma prática, sem ferramentas de bui
 - Composição de formulário com componentes desacoplados (`Form`, `Input`, `Button`, `Titulo`)
 - Passagem de arrays e leitura de props para depuração inicial com `console.log`
 
+**Novos estudos (0212 - desafio componentes):**
+
+- Construção de layout com componentes aninhados (`Header`, `Menu`, `Home`, `Produtos`, `Titulo`)
+- Uso de spread operator (`...props` / `...produto`) para desempacotar objetos em componentes
+- Renderização condicional baseada em rotas simples (`window.location.pathname`)
+- Mapeamento de arrays de objetos para renderização de listas de componentes (`map`)
+- Estrutura de menu com navegação entre seções (`Home` e `Produtos`)
+- Componente reutilizável `Titulo` com estilos consistentes em diferentes páginas
+- Componente `Produto` que recebe lista de propriedades e as renderiza dinamicamente
+
 **Novos estudos (componentes e estrutura centralizada):**
 
 - Criação de uma estrutura React única na raiz do repositório com Vite
