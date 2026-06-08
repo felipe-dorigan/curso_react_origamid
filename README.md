@@ -5,7 +5,7 @@ Este repositório reúne meus estudos do curso de React, organizados por módulo
 ## Status Geral
 
 - Progresso atual: **1 módulo concluído**
-- Módulo atual: **Módulo 2 — React para Iniciantes** (em andamento)
+- Módulo atual: **Módulo 3 — React Hooks** (em andamento)
 
 ## Módulos
 
@@ -120,6 +120,26 @@ Introdução ao funcionamento do React de forma prática, sem ferramentas de bui
 - Entrada principal da aplicação em `src/index.jsx`
 - Arquivos de apoio para alternar contexto entre aulas (`src/App-0210.jsx` e `src/App-0211.jsx`)
 - Componente principal (`src/App.jsx`) como ponto de troca manual durante os estudos
+
+---
+
+### 🔄 Módulo 3 — React Hooks (em andamento)
+
+Estudos focados em `useState`, controle de interface e consumo de API.
+
+**Tópicos aprendidos até agora:**
+
+- Uso de `useState` para controlar abertura e fechamento de modal
+- Atualização de estado com função de callback para alternar valores booleanos
+- Condicional de renderização para mostrar ou esconder componentes
+- Estado com arrays para acumular itens dinamicamente na interface
+- Criação de lista renderizada a partir de dados salvos no estado
+- Consumo de API com `fetch` dentro de função assíncrona
+- Uso de `async/await` com tratamento básico de erro via `try/catch`
+- Controle de `loading` para exibir mensagem durante a requisição
+- Renderização de apenas um produto por vez com base no item selecionado
+- Reaproveitamento de componentes para botão e exibição de dados do produto
+- Organização do fluxo de estado entre componentes pais e filhos via props
 
 **Comandos para iniciar um ambiente React com Vite:**
 
