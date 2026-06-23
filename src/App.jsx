@@ -1,13 +1,11 @@
 import React from "react";
-import Aplicacao from "../3-react-hooks/0304-usecallback/Aplicacao";
+import Aplicacao from "../4-formularios/0401-input1/Aplicacao";
 
 const App = () => {
-    const  { pathname } = window.location;
-
     return (
-        // <React.Fragment>
+        <React.Fragment>
             <Aplicacao />
-        // </React.Fragment>
+        </React.Fragment>
     );
 }
 
