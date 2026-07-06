@@ -4,9 +4,9 @@ Este repositório reúne meus estudos do curso de React, organizados por módulo
 
 ## Status Geral
 
-- Progresso atual: **3 módulos concluídos**
-- Módulo atual: **Módulo 4 — Formulários** (iniciado)
-- Aula atual: **0401 — Input**
+- Progresso atual: **4 módulos concluídos**
+- Módulo atual: **Módulo 4 — Formulários** (concluído)
+- Aula atual: **0412 — Desafio Formulários**
 
 ## Módulos
 
@@ -56,19 +56,33 @@ Principais aulas registradas:
 
 ---
 
-### 🔄 Módulo 4 — Formulários (em andamento)
+### ✅ Módulo 4 — Formulários
 
 Resumo do módulo:
 
-- Início do estudo de formulários em React com inputs controlados
-- Controle de múltiplos campos em um único objeto de estado com `useState`
-- Atualização dinâmica de propriedades do estado usando o `id` do input e propriedade computada (`[id]`)
-- Uso de `value` e `onChange` para manter o estado do React como fonte da verdade
-- Uso de `event.preventDefault()` para controlar o envio do formulário sem recarregar a página
+- Inputs, textareas, selects, radios e checkboxes controlados com `useState`
+- Gestão de formulário com estado único e também com estados separados por campo
+- Componentização de campos reutilizáveis (`Input`, `Select`, `Radio`, `Checkbox`)
+- Validação de dados com regex e exibição de mensagens de erro por campo
+- Extração da lógica de formulário para custom hook `useForm`
+- Construção de desafio final com fluxo de perguntas, controle de respostas e resultado
 
 Principais aulas registradas:
 
 - `0401-input1`: formulário com campos `nome` e `email`, atualização genérica via `handleChange` e submit controlado
+- `0401-input2`: variação de input controlado com organização alternativa do estado e do `onChange`
+- `0402-textarea`: controle de textarea com `value`/`onChange` mantendo sincronismo com estado
+- `0403-select`: select controlado com opção inicial desabilitada e atualização por evento
+- `0404-radio`: grupos de radio controlados com comparação via `checked`
+- `0405-checkbox1`: checkbox múltiplo com inclusão/remoção de itens em array
+- `0405-checkbox2`: renderização dinâmica de checkboxes via `map` e estado em lista
+- `0406-componentes-input`: criação de componente `Input` reutilizável com props
+- `0407-componentes-select`: criação de componente `Select` reutilizável com lista de opções
+- `0408-componentes-radio`: criação de componente `Radio` reutilizável para diferentes grupos
+- `0409-componentes-checkbox`: criação de componente `Checkbox` reutilizável para seleção múltipla
+- `0410-validacao`: validação de CEP com regex, `onBlur`, `onChange` e feedback de erro
+- `0411-useform`: uso de custom hook `useForm` para centralizar valor, validação e erro
+- `0412-desafio-formularios`: quiz com navegação entre perguntas e cálculo de acertos
 
 ---
 
@@ -76,5 +90,6 @@ Principais aulas registradas:
 
 - [x] Concluir Módulo 3 (React Hooks)
 - [x] Iniciar Módulo 4 (Formulários)
-- [ ] Continuar aulas de formulários
+- [x] Concluir Módulo 4 (Formulários)
+- [ ] Iniciar próximo módulo do curso
 - [ ] Atualizar este README ao final de cada conjunto de aulas
